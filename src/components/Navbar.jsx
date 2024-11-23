@@ -11,7 +11,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/list-products">List Products</NavLink>
             <NavLink to="/transaction">Transaction History</NavLink>
-            <button>Connect Wallet</button>
+            <button className='wallet'>Connect Wallet</button>
         </div>
     </header>
   )
