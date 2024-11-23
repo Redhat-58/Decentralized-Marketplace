@@ -2,18 +2,110 @@ import React from 'react'
 import Cart from '../assets/images/cart.png'
 import schoolBag from '../assets/images/bag.jpg'
 import headset from '../assets/images/headset.jpg'
+import mouse from '../assets/images/mouse.jpg'
+import laptop from '../assets/images/laptop.jpg'
+import Gamepad from '../assets/images/gamePad.jpg'
+import SmartWatch from '../assets/images/smartWatch.jpg'
 import { TiShoppingCart } from 'react-icons/ti';
 
 const List_Products = () => {
 
-  const ProductCart = [
+  const products = [
     {
       id: 1,
       name: "School Bag",
       price: 10.99,
       description:
         "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: "",
+      image: schoolBag,
+    },
+    {
+      id: 2,
+      name: "Head Set",
+      price: 10.99,
+      description:
+        "High-quality headset with clear sound, noise-canceling features, and a comfortable fit, perfect for gaming, music, or video calls.",
+      image: headset,
+    },
+    {
+      id: 3,
+      name: "Mouse",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: mouse,
+    },
+    {
+      id: 4,
+      name: "Laptop",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: laptop,
+    },
+    {
+      id: 5,
+      name: "Game Pad",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: Gamepad,
+    },
+    {
+      id: 6,
+      name: "Smart Watch",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: SmartWatch,
+    },
+    {
+      id: 7,
+      name: "School Bag",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: schoolBag,
+    },
+    {
+      id: 8,
+      name: "Head Set",
+      price: 10.99,
+      description:
+        "High-quality headset with clear sound, noise-canceling features, and a comfortable fit, perfect for gaming, music, or video calls.",
+      image: headset,
+    },
+    {
+      id: 9,
+      name: "Mouse",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: mouse,
+    },
+    {
+      id: 10,
+      name: "Laptop",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: laptop,
+    },
+    {
+      id: 11,
+      name: "Game Pad",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: Gamepad,
+    },
+    {
+      id: 12,
+      name: "Smart Watch",
+      price: 10.99,
+      description:
+        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+      image: SmartWatch,
     },
   ];
   return (
@@ -35,54 +127,22 @@ const List_Products = () => {
         <h2>Our Available Products</h2>
 
         <div className="product-card">
-          <div className="product-box">
-            <img src={schoolBag} alt="" />
-            <h3>School Bag</h3>
-            <p>
-              Durable and stylish school bag with spacious compartments for
-              carrying books, supplies, and essentials comfortably all day.
-            </p>
-            <p>$30.00</p>
-            <button>
-              Add to cart <TiShoppingCart />
-            </button>
-          </div>
-          <div className="product-box">
-            <img src={headset} alt="" />
-            <h3>Headset</h3>
-            <p>
-              High-quality headset with clear sound, noise-canceling features,
-              and a comfortable fit, perfect for gaming, music, or video calls.
-            </p>
-            <p>$30.00</p>
-            <button>
-              Add to cart <TiShoppingCart />
-            </button>
-          </div>
-          <div className="product-box">
-            <img src={schoolBag} alt="" />
-            <h3>School Bag</h3>
-            <p>
-              Durable and stylish school bag with spacious compartments for
-              carrying books, supplies, and essentials comfortably all day
-            </p>
-            <p>$30.00</p>
-            <button>
-              Add to cart <TiShoppingCart />
-            </button>
-          </div>
-          <div className="product-box">
-            <img src={schoolBag} alt="" />
-            <h3>School Bag</h3>
-            <p>
-              Durable and stylish school bag with spacious compartments for
-              carrying books, supplies, and essentials comfortably all day
-            </p>
-            <p>$30.00</p>
-            <button>
-              Add to cart <TiShoppingCart />
-            </button>
-          </div>
+         
+         {products.map((product) =>{
+            return (
+              <div className="product-box">
+                <img src={product.image} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>
+                 {product.description}
+                </p>
+                <p>${product.price}</p>
+                <button className='cart-btn'>
+                  Add to cart <TiShoppingCart className='cart-icon' />
+                </button>
+              </div>
+            );
+         })}
         </div>
       </div>
     </>
