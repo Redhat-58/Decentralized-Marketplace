@@ -64,15 +64,16 @@ header{
   color: white;
   border: none;
   cursor: pointer;
-
 }
 
 
 .hero-buttons{
   display: flex;
   gap: 1.5rem;
-  padding: 3.27rem 0;
+  padding: 3.22rem 0;
 }
+
+
 .btn1, .btn2{
   background-color: #0d84e5;
   color: white;
@@ -129,9 +130,11 @@ header{
 .product-image h2{
   text-align: center;
 }
+
 .product-image{
   padding: 2rem 5rem;
 }
+
 .product-card{
   padding-top: 2.5rem;
   display: flex;
@@ -144,6 +147,7 @@ header{
 .product-box img{
   height: 120px;
 }
+
 .product-box{
   border: 2px solid rgb(215, 211, 211);
   border-radius: 8px;
@@ -163,10 +167,64 @@ header{
   align-items: center;
   gap: 10px;
 }
+
 .cart-icon{
   font-size: 1.25rem;
 }
 
 .product-image h2{
   color: #031d31;
+}
+
+
+.add-product {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.add-product h2{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input input[type="text"],
+.form-input input[type="number"],
+.form-input input[type="file"],
+.form-input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input input[type="file"] {
+  padding: 3px; /* Adjust padding for file input */
+}
+
+.form-input textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.product-btn{
+  background-color:#031d31; /* Green */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
