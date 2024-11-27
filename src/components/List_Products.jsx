@@ -8,106 +8,107 @@ import Gamepad from '../assets/images/gamePad.jpg'
 import SmartWatch from '../assets/images/smartWatch.jpg'
 import { TiShoppingCart } from 'react-icons/ti';
 
+ export const products = [
+   {
+     id: 1,
+     name: "School Bag",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: schoolBag,
+   },
+   {
+     id: 2,
+     name: "Head Set",
+     price: 10.99,
+     description:
+       "High-quality headset with clear sound, noise-canceling features, and a comfortable fit, perfect for gaming, music, or video calls.",
+     image: headset,
+   },
+   {
+     id: 3,
+     name: "Mouse",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: mouse,
+   },
+   {
+     id: 4,
+     name: "Laptop",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: laptop,
+   },
+   {
+     id: 5,
+     name: "Game Pad",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: Gamepad,
+   },
+   {
+     id: 6,
+     name: "Smart Watch",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: SmartWatch,
+   },
+   {
+     id: 7,
+     name: "School Bag",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: schoolBag,
+   },
+   {
+     id: 8,
+     name: "Head Set",
+     price: 10.99,
+     description:
+       "High-quality headset with clear sound, noise-canceling features, and a comfortable fit, perfect for gaming, music, or video calls.",
+     image: headset,
+   },
+   {
+     id: 9,
+     name: "Mouse",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: mouse,
+   },
+   {
+     id: 10,
+     name: "Laptop",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: laptop,
+   },
+   {
+     id: 11,
+     name: "Game Pad",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: Gamepad,
+   },
+   {
+     id: 12,
+     name: "Smart Watch",
+     price: 10.99,
+     description:
+       "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
+     image: SmartWatch,
+   },
+ ];
 const List_Products = () => {
 
-  const products = [
-    {
-      id: 1,
-      name: "School Bag",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: schoolBag,
-    },
-    {
-      id: 2,
-      name: "Head Set",
-      price: 10.99,
-      description:
-        "High-quality headset with clear sound, noise-canceling features, and a comfortable fit, perfect for gaming, music, or video calls.",
-      image: headset,
-    },
-    {
-      id: 3,
-      name: "Mouse",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: mouse,
-    },
-    {
-      id: 4,
-      name: "Laptop",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: laptop,
-    },
-    {
-      id: 5,
-      name: "Game Pad",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: Gamepad,
-    },
-    {
-      id: 6,
-      name: "Smart Watch",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: SmartWatch,
-    },
-    {
-      id: 7,
-      name: "School Bag",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: schoolBag,
-    },
-    {
-      id: 8,
-      name: "Head Set",
-      price: 10.99,
-      description:
-        "High-quality headset with clear sound, noise-canceling features, and a comfortable fit, perfect for gaming, music, or video calls.",
-      image: headset,
-    },
-    {
-      id: 9,
-      name: "Mouse",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: mouse,
-    },
-    {
-      id: 10,
-      name: "Laptop",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: laptop,
-    },
-    {
-      id: 11,
-      name: "Game Pad",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: Gamepad,
-    },
-    {
-      id: 12,
-      name: "Smart Watch",
-      price: 10.99,
-      description:
-        "Durable and stylish school bag with spacious compartments for carrying books, supplies, and essentials comfortably all day.",
-      image: SmartWatch,
-    },
-  ];
+ 
   return (
     <>
       <section className="product-container">

@@ -202,7 +202,7 @@ header{
 
 .form-input input[type="text"],
 .form-input input[type="number"],
-.form-input input[type="file"],
+.form-input input[type="url"],
 .form-input textarea {
   width: 100%;
   padding: 10px;
