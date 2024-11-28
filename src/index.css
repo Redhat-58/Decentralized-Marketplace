@@ -85,6 +85,11 @@ header{
   font-weight: bold;
 }
 
+.btn1:hover{
+  cursor: pointer;
+  background-color: #29091b;
+  color: white;
+}
 .btn2{
   background-color: rgb(167, 23, 71);
 }

@@ -108,7 +108,9 @@ import { TiShoppingCart } from 'react-icons/ti';
  ];
 const List_Products = () => {
 
- 
+ const handleBuy = () => {
+   alert("Order Placed Successfully");
+ };
   return (
     <>
       <section className="product-container">
@@ -138,8 +140,8 @@ const List_Products = () => {
                  {product.description}
                 </p>
                 <p>${product.price}</p>
-                <button className='cart-btn'>
-                  Buy <TiShoppingCart className='cart-icon' />
+                <button className='cart-btn' onClick={handleBuy}>
+                  Buy Now <TiShoppingCart className='cart-icon' />
                 </button>
               </div>
             );
