@@ -139,7 +139,7 @@ const List_Products = () => {
                 </p>
                 <p>${product.price}</p>
                 <button className='cart-btn'>
-                  Add to cart <TiShoppingCart className='cart-icon' />
+                  Buy <TiShoppingCart className='cart-icon' />
                 </button>
               </div>
             );
